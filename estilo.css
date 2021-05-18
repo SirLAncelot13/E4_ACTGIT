@@ -1,0 +1,23 @@
+body {
+    font-family: mifuente;
+}
+@font-face{   /*le estamos indicando que creara una nueva fuente*/
+    font-family: mifuente; /*y que le asignara A ESTA variable*/
+    src: url(resources/font.ttf); /* esta fuente*/
+    /* ../resources/font.ttf para salir de la carpeta actual y entrar a otra*/
+
+    /*Cuando se usa el modelado de cajas height y width solo toman en cuenta el contenido ignorando a padding y margin*/
+}
+div#contenedor{
+    border: 5px red solid;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-right: 140px;
+    margin-bottom: 20px;
+    /*el padding no hace nada con numeros negativos, el margin si*/
+    padding-left: 40px;
+    padding-right: 5px;
+    width: 200px;
+    /*al añadir el box-sizing: border box le decimos que empieze a medir incluyendo el borde*/
+    box-sizing: border-box;
+}
